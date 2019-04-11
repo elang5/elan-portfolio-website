@@ -8,14 +8,6 @@ footer, header, hgroup, menu, nav, section {
     font-family: 'Karla', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: 'Spectral', serif;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
 
 body {
     margin: 0;
@@ -35,6 +27,23 @@ footer {
     height: 10%;
     text-align: right;
     padding: 20px;
+}
+
+h1, h2, h3, label, select, option, textarea, button {
+    font-family: 'Spectral', serif;
+}
+
+label, select, option, button {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    max-width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .nav {
@@ -154,3 +163,28 @@ p {
     }
 }
 
+.form-container {
+    border: 5px solid #49494b;
+    width: 60%;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+input, select, textarea, button {
+    padding: .5em;
+    border: none;
+    margin: 1em;
+    box-shadow: 4px 4px #49494b;
+}
+
+.js-submit-btn {
+    padding: 10px;
+    background: #96858F;
+    border: none;
+}

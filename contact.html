@@ -32,27 +32,30 @@
     </nav>
     <main role = "main">
         <header role = "banner" class = "heading">
-            <h2>Hello, I’m Elan. I am a full-stack web developer currently living in Austin, TX.</h2>
+            <h2>Interested in working together? Please send me an email!</h2>
+
         </header>
-        <section>
-            <img src="img/beach-compressed.JPG" alt="beach photo" class = "header-photo">
-        </section>
-        <section>
-            <h3 class = "center">Here are a few of my proficiencies: </h3>
-            <div class="icons">
-                <img src="img/css3.png" alt="">
-                <img src="img/html5.png" alt="">
-                <img src="img/javascript.png" alt="">
-                <img src="img/jQuery.png" alt="">
-                <img src="img/ts.png" alt="">
-            </div>
-        </section>
-        <section>
+        <div class="form-container">
+            <form action="" class = "form">
+                <label for="fname">First Name</label>
+                <input type="text" id ="fname">
 
-        </section>
-        <section>
+                <label for="lname">Last Name</label>
+                <input type="text" id ="lname">
 
-        </section>
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject">
+                    <option value="Question">Other</option>
+                    <option value="Collaboration">Collaboration</option>
+                    <option value="Job Information">Job Information</option>
+                    <option value="Other">Question</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+                <button type = "submit" class = "js-submit-btn">Submit</button>
+            </form>
+    </div>
     </main>
     <footer role = "content-info">
         Copyright Elan Green 2019
