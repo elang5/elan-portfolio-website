@@ -8,10 +8,6 @@ footer, header, hgroup, menu, nav, section {
     font-family: 'Karla', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: 'Spectral', serif;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -26,26 +22,32 @@ body {
 }
 
 main {
-    margin: 2em;
-    padding-top: .5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    padding-top: 1.5em;
 }
 
 footer {
-    border-top: 1px solid #9099A2;
+    border-top: 1px solid #49494b;
     height: 10%;
     text-align: right;
     padding: 20px;
 }
-h1, h2, h3, label, select, option, textarea, button {
+h1, h2, h3, label, select, option, textarea, button, .dropdown > a {
     font-family: 'Spectral', serif;
 }
 
-label, select, option, button {
+label, select, option, button, .dropdown > a {
     font-weight: bold;
 }
 
 input, select, textarea {
     max-width: 80%;
+}
+
+textarea {
+    font-size: 18px;
 }
 
 a {
@@ -112,7 +114,7 @@ p {
 }
 
 .header-photo {
-    max-width: 90%;
+    max-width: 75%;
     display: block;
     margin: 0 auto;
 }
@@ -139,7 +141,7 @@ p {
 }
 
 .dropdown a:hover {
-    background-color: #96858F;
+    background-color: #2B4141;
     color: white;
 }
 
@@ -183,15 +185,53 @@ p {
     align-items: center;
 }
 
-input, select, textarea, button {
+input, select, textarea, button, .button {
     padding: .5em;
     border: none;
     margin: 1em;
     box-shadow: 4px 4px #49494b;
 }
 
-.js-submit-btn {
-    padding: 10px;
+.js-submit-btn, .button {
+    padding: 15px;
     background: #96858F;
-    border: none;
+    text-align: center;
+    cursor: pointer;
 }
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.caption {
+    margin: .5em;
+}
+
+.border-bottom {
+    padding-bottom: .5em;
+    border-bottom: 2px solid #2B4141;
+}
+
+.border-top {
+    border-top: 2px solid #2B4141;
+    padding-top: 1em;
+}
+
+.button-container {
+    margin: 1em;
+    text-align: center;
+}
+
+.padding-top {
+    padding-top: 1em;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
