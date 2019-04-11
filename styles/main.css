@@ -1,0 +1,58 @@
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+* body {
+    box-sizing: border-box;
+    font-family: 'Volkorn', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 5px solid grey;
+}
+
+main {
+    margin: 2em;
+    padding-top: 4em;
+}
+
+footer {
+    border-top: 1px solid lightgrey;
+    height: 10%;
+    text-align: right;
+    padding: 20px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 15px;
+    top: 0;
+}
+
+.nav > li {
+    display: block;
+    text-align: center;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav li:first-child {
+    float: left;
+}
+
+
+.menu-icon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.menu {
+    margin-top: 5px;
+}
