@@ -10,50 +10,115 @@
     <title>Elan Green</title>
 </head>
 <body>
-    <nav role = "header">
-        <ul class = "nav">
-            <li>
-                <a href="index.html" alt = "logo"><img src="img/logo.jpg" alt=""></a>  
-            </li>
-            <div class="container">
-                <div class = "menu" aria-label = "menu">
-                    <div class = "menu-bar1"></div>
-                    <div class = "menu-bar2"></div>
-                    <div class = "menu-bar3"></div>
+    <div class="main-page" id = "main">
+        <nav role = "header" class = "nav">
+            <div class="container-3">
+                <div>
+                    <a href="index.html" alt = "logo"><img src="img/logo.jpg" alt=""></a> 
+                </div> 
+
+                <div></div>
+
+                <div class="container">
+                    <div class = "menu" aria-label = "menu">
+                        <div class = "menu-bar1"></div>
+                        <div class = "menu-bar2"></div>
+                        <div class = "menu-bar3"></div>
+                    </div>
+                </div>
+                <div class="dropdown hidden">
+                        <a href="#main">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
                 </div>
             </div>
-        </ul>
-        <div class="dropdown hidden">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact Me</a>
+        </nav>
+        <main role = "main">
+            <header role = "banner" class = "heading">
+            </header>
+                <div class = "container-2">
+                    <h1 class = "hero-text">Hello, I’m Elan Green. I am a full-stack web developer currently living in Austin, TX.</h1>
+                    <div class="icons">
+                            <img src="img/css3.png" alt="css icon">
+                            <img src="img/html5.png" alt="html5 icon">
+                            <img src="img/javascript.png" alt="javascript icon">
+                            <img src="img/jQuery.png" alt="jQuery icon">
+                            <img src="img/ts.png" alt="typescript icon">
+                    </div>
+                </div>
+        </main>
+    </div>
+    <div class="about-me-page" id = "about">
+        <main role = "main">
+            <header role = "banner" class = "heading">
+                <h2 class = "border-bottom">Why programming? Here's a little bit about me.</h2>
+            </header>
+            <section class = "about-me">
+                <img src="img/profile.JPG" alt="personal profile" class = "header-photo">
+                <p>
+                    At the start of 2019, I decided to pursue my dream of becoming a developer. In Thinkful’s Software Engineering Immersion program, I am learning to build dynamic, scalable web applications using JavaScript, TypeScript, jQuery, HTML5, CSS3, and React. I have always been fascinated by human interaction with technology, and my tech savvy emerged at a young age. At age 11, I started building computers and soon after began dabbling in game development using GameMaker Studio.<br>
+                    <br>
+                    Despite my passion for all aspects of technology, it had remained entirely hobby-based until this year. In my undergraduate studies, I pursued music, then medicine, and finally I settled on psychology. As a research assistant, I discovered a passion for statistics and as such, I was exposed to R. I also worked on the content for a smoking cessation app. This experience further motivated me to pursue programming in some capacity and allowed me to see how my passion for psychology could interface with technology. <br>
+                    <br>
+                    Outside of programming, my primary passions are music and nature. Having grown up in Portland, OR, hiking, backpacking, skiing, and rock climbing are very important to me. Furthermore, I am a classically trained cellist with 20 years of experience playing with symphonies, chamber music groups, rock bands, producers, and so on. I believe the intersection of music and technology is extremely powerful, and it is a great dream of mine to someday work for a music-focused tech company. <br>
+                    <br>
+                    Another professional interest (and passion) of mine is to help adolescents with substance abuse issues. This was my motivation in pursuing psychology, and before enrolling in Thinkful’s program, I had planned to matriculate into a clinical psychology and addiction counseling graduate program this fall. Despite my current career transition, I believe that there are so many ways in which technology can be utilized to help people, even in the context of addiction. I can’t wait to be a part of this and much more.<br>  
+                </p>
+            </section>
+            <section>
+    
+            </section>
+            <section>
+    
+            </section>
+            <section>
+    
+            </section>
+        </main>
+    </div>
+    <div class="projects-page" id = "projects">
+        <main role = "main">
+                <section>
+                    <h2 class = "center border-bottom">Projects</h2>
+                    <h3 class="center">Quiz App</h3>
+                    <div class="project-container">
+                        <a href="https://elang5.github.io/quiz-app/">
+                            <img class = "quiz-app" src="img/quizapp.JPG" alt="quiz app">
+                            <figcaption class = "caption">Click the project to test it out!</figcaption>
+                        </a>
+                    </div>
+                    <div class="button-container">
+                        <a class = "button" href= "https://github.com/elang5/quiz-app">View on Github</a>
+                    </div>
+                    <h2 class = "padding-top">Project Description: </h2>
+                    <p>
+                        This is a quiz app which utilizes the Open Trivia Database API to generate a number of questions to display to the user. The user’s score is kept in the status bar, as well as the high score of the current game. A user may play as many games in their local browser window and the high score will update accordingly. Flexbox was used for the simple, yet straightforward design interface. 
+                    </p>
+                    <h2 class="center">Technologies Used: </h2>
+                    <div class="icons">
+                        <img src="img/css3.png" alt="css logo">
+                        <img src="img/html5.png" alt="html logo">
+                        <img src="img/javascript.png" alt="js logo">
+                        <img src="img/jQuery.png" alt="jQuery logo">
+                    </div>
+                </section>
+                <section>
+        
+                </section>
+                <section>
+        
+                </section>
+            </main>
+    </div>
+    <div class="contact-page" id = "contact">
+        <h1 class = "center small">Interested in working together? Please send me an email or connect with me on LinkedIn!</h1>
+        <div class="logo-container">
+            <a href = "mailto: green.elan5@example.com"><img src="img/gmail.png" alt="gmail logo"></a>
+            <a href="https://www.linkedin.com/in/elan-green-a489818a/"><img src="img/linkedin.png" alt="linkedin logo"></a>
+            <a href="https://github.com/elang5/"><img src="img/github.png" alt="github logo"></a>
         </div>
-    </nav>
-    <main role = "main">
-        <header role = "banner" class = "heading">
-            <h2 class = "border-bottom">Hello, I’m Elan. I am a full-stack web developer currently living in Austin, TX.</h2>
-        </header>
-        <section>
-            <img src="img/beach-compressed.JPG" alt="beach photo" class = "header-photo">
-        </section>
-        <section>
-            <h3 class = "center border-top">Here are a few of my proficiencies: </h3>
-            <div class="icons">
-                <img src="img/css3.png" alt="">
-                <img src="img/html5.png" alt="">
-                <img src="img/javascript.png" alt="">
-                <img src="img/jQuery.png" alt="">
-                <img src="img/ts.png" alt="">
-            </div>
-        </section>
-        <section>
-
-        </section>
-        <section>
-
-        </section>
-    </main>
+    </div>   
     <footer role = "content-info">
         Copyright Elan Green 2019
     </footer>

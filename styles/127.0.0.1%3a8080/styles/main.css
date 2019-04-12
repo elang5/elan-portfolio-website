@@ -27,7 +27,10 @@ a {
     color: black;
 }
 
-.main-page, .about-me-page, .projects-page, .contact-page {
+.main-page, .about-me-page, .projects-page {
+    border-bottom: 7px solid #08415C;
+    /* margin-left: 2em; */
+    /* margin-right: 2em; */
     padding-left: 2em;
     padding-right: 2em;
 }
@@ -77,19 +80,30 @@ a {
 }
 
 .nav {
+    display: grid;
+    grid-template-columns: minmax(min-content,max-content) auto 50px;
+    grid-template-rows: auto;
+    /* justify-content: space-between; */
     list-style-type: none;
-    margin: 1em;
-    left: 0;
+    padding: 15px;
+    margin: 0;
+    top: 0;
     position: fixed;
-    width: calc(100% - 2em);
-    
+    /* width: 85%; */
+    /* width: 100%; */
+    /* right: 20px; */
 }
 
-.container-3 {
-    display: grid;
-    grid-template-columns: min-content auto min-content;
-    grid-template-rows: auto auto;
-    justify-items: end;
+.nav > li {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    /* margin-left: 5px; */
+    margin-right: 5px;
+}
+
+.nav li:first-child {
+    /* float: left; */
 }
 
 .menu-bar1, .menu-bar2, .menu-bar3 {
@@ -103,13 +117,14 @@ a {
 .menu {
     margin-top: 5px;
     cursor: pointer;
+    /* position: fixed; */
+    /* right: 20px; */
 }
 
 .container-2 {
     display: flex;
     flex-flow:column wrap;
     justify-content: center;
-    height: 800px;
     margin: 0 auto;
 }
 
@@ -132,7 +147,7 @@ a {
 }
 
 .main-page {
-    height: 950px;
+    height: 850px;
 }
 
 .hero-text {
@@ -165,17 +180,21 @@ p {
     margin: 0;
     display: flex;
     flex-flow: column;
-    grid-column-start: 3;
+    width: 100%;
+    position: fixed;
+    /* padding-right: 5em; */
+    right: 2px;
+    /* background-color: #08415C; */
 }
 
 .dropdown a {
-    border-bottom: 2px solid #08415C;
+    /* border-bottom: 2px solid #08415C; */
     text-align: right;
     padding: 1em;
 }
 
 .dropdown a:first-child {
-    border-top: 2px solid #08415C;
+    /* border-top: 2px solid #08415C; */
 }
 
 .dropdown a:hover {
@@ -216,8 +235,20 @@ p {
     }
 }
 
+.form-container {
+    border: 5px solid #08415C;
+    width: 60%;
+    padding: 1em;
+    margin: 0 auto;
+}
 
-button {
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+input, select, textarea, button, .button {
     padding: .5em;
     border: none;
     margin: 1em;
@@ -281,7 +312,7 @@ button {
 }
 
 .contact-page {
-    height: 950px;
+    height: 850px;
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
