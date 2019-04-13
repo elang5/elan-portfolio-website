@@ -5,23 +5,23 @@ footer, header, hgroup, menu, nav, section {
 
 * body {
     box-sizing: border-box;
-    font-family: 'Karla', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
     width: 100%;
+    line-height: 1.6;
     border-left: 7px solid #0A3A5E;
     border-right: 7px solid #0A3A5E;
     border-bottom: 7px solid #0A3A5E;
-    /* background-color: #08415C; */
     color: white;
     background-image: url("/img/drops.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Spectral', sans-serif;
 }
 
 .nav {
@@ -46,8 +46,8 @@ a {
 
 
 main {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
     margin-bottom: 2em;
     padding-top: 1.5em;
 }
@@ -95,6 +95,7 @@ a {
         list-style-type: none;
         display: flex;
         flex-flow: row nowrap;
+        margin-top: .6em;
     }
     
     .navbar > li > a {
@@ -108,6 +109,10 @@ a {
 
     .navbar > li > a:hover {
         color: #915006;
+    }
+
+    .js-about {
+        display: none;
     }
 }
 
@@ -167,10 +172,6 @@ p {
     line-height: 1.5;
 }
 
-.container.hidden {
-    display: none;
-}
-
 .heading {
     text-align: center;
 }
@@ -192,13 +193,8 @@ p {
 }
 
 .dropdown a {
-    border-bottom: 2px solid #0A3A5E;
     text-align: right;
     padding: 1em;
-}
-
-.dropdown a:first-child {
-    border-top: 2px solid #0A3A5E;
 }
 
 .dropdown a:hover {
@@ -236,7 +232,6 @@ p {
         padding-top: 8px;
     }
 }
-
 
 button {
     padding: .5em;
@@ -283,6 +278,10 @@ button {
     padding-top: 1em;
 }
 
+.logo {
+    position: fixed;
+}
+
 .logo-container {
     display: flex;
     justify-content: center;
@@ -302,7 +301,7 @@ button {
 }
 
 .contact-page {
-    height: 950px;
+    height: 900px;
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
@@ -381,5 +380,16 @@ button {
         position: fixed;
         width: calc(100% - 2em);   
     }
+
+    .container.hidden {
+        display: none;
+    }
 }
+
+button {
+    padding: 16px 24px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
 
