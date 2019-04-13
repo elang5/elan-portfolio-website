@@ -16,7 +16,7 @@ body {
     border-right: 7px solid #0A3A5E;
     border-bottom: 7px solid #0A3A5E;
     color: white;
-    background-image: url(/img/drops.jpg);
+    background-image: url("img/drops.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
