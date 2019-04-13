@@ -189,7 +189,7 @@ p {
     margin-top: .5em;
     display: flex;
     flex-flow: column;
-    grid-column-start: 2;
+    grid-column-start: 3;
 }
 
 .dropdown a {
@@ -223,7 +223,6 @@ p {
 
 @media only screen and (max-width: 400px) {
     .icons {
-        flex-flow: column wrap;
         align-content: center;
         padding-bottom: 1em;
     }
@@ -276,10 +275,6 @@ button {
 
 .padding-top {
     padding-top: 1em;
-}
-
-.logo {
-    position: fixed;
 }
 
 .logo-container {
