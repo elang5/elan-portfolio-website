@@ -186,20 +186,20 @@ p {
 }
 
 .dropdown {
-    margin: 0;
+    margin-top: .5em;
     display: flex;
     flex-flow: column;
-    grid-column-start: 3;
+    grid-column-start: 2;
 }
 
 .dropdown a {
     text-align: right;
-    padding: 1em;
+    padding: 8px 14px;
 }
 
 .dropdown a:hover {
-    background-color: #0A3A5E;
-    color: #D5D5D5;
+    background-color: #915006;
+    color: white;
 }
 
 .mobile-menu {
