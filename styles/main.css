@@ -223,8 +223,27 @@ p {
     .icons {
         grid-gap: 1rem;
     }
-    .hero-text {
+    .hero-text, .center.small {
         font-size: 22px;
+    }
+}
+
+.technologies {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2em .5em;
+    margin: 0 auto;
+}
+
+.technologies > svg {
+    padding: .5em 0;
+}
+
+@media only screen and (max-width: 400px) {
+    .technologies {
+        flex-flow: column wrap;
+        align-content: center;
     }
 }
 
@@ -275,12 +294,14 @@ button {
 
 .logo-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .logo-container > a > img {
     padding-right: 15px;
-    width: 64px;
+    width: 48px;
 }
 
 .about-me {
@@ -299,7 +320,7 @@ button {
 }
 
 .small {
-    width: 65%;
+    width: 75%;
     margin: 0 auto;
     padding-bottom: 1em;
 }
