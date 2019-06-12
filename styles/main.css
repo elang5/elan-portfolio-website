@@ -16,7 +16,7 @@ body {
     border-right: 7px solid #0A3A5E;
     border-bottom: 7px solid #0A3A5E;
     color: white;
-    background-image: url(../img/drops.jpg);
+    background-image: url(../website-images/drops.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,14 +130,13 @@ a {
 
 .container-2 {
     display: flex;
-    flex-flow:column wrap;
+    flex-flow: column wrap;
     justify-content: center;
-    height: 800px;
-    margin: 0 auto;
+    height: 600px;
 }
 
-.quiz-app {
-    width: 95%;
+.ratemusic {
+    max-width: 90%;
 }
 
 .menu-bar1.change {
@@ -212,23 +211,20 @@ p {
 }
 
 .icons {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2em;
-    padding-right: .5em;
-    padding-bottom: 2em;
-    width: 60%;
+    display: grid;
+    align-items: center;
+    padding: 3em 0;
     margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 465px) {
     .icons {
-        align-content: center;
-        padding-bottom: 1em;
+        grid-gap: 1rem;
     }
-    .icons > img {
-        max-width: 64px;
-        padding-top: 8px;
+    .hero-text {
+        font-size: 22px;
     }
 }
 
@@ -387,4 +383,6 @@ button {
     font-size: 18px;
 }
 
-
+.gmail {
+    padding-top: 7px;
+}
