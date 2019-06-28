@@ -1,16 +1,10 @@
-/* global $ */
-
 'use strict';
 
-const menuChange = function() {
-  $('.menu').on('click', function() {
-    $('.menu').children().toggleClass('change');
-    $('.dropdown').toggleClass('hidden');
-  });
+function openNav() {
+  document.getElementById('nav').style.width = '200px'
+}
 
-  $('.js-about').on('click', function() {
-    $('.container').toggleClass('hidden');
-  });
-};
+function closeNav() {
+  document.getElementById('nav').style.width = '0'
+}
 
-$(menuChange);
