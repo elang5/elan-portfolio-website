@@ -367,8 +367,13 @@ button {
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 .colored {
-    color: #915006;
+    color: rgba(160, 57, 1, 0.927);
+    font-size: 1.75rem;
 }
 
 nav {
@@ -398,11 +403,11 @@ nav {
   
   nav .closebtn {
     position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 36px;
+    top: .125em;
+    right: 0;
     margin-left: 50px;
-    color: rgba(218, 98, 33, 0.927);
+    color: rgba(160, 57, 1, 0.927);
+    cursor: pointer;
   }
   
   @media screen and (max-height: 450px) {
@@ -411,12 +416,18 @@ nav {
   }
   
   .fa-bars {
-    margin: .5em;
-    color: rgba(218, 98, 33, 0.927);
+    margin: .25em;
+    color: rgba(160, 57, 1, 0.927);
+    cursor: pointer;
+    font-size: 40px;
   }
 
   .personal-logo {
     position: absolute;
     top: 15px;
     right: 15px;
+  }
+
+  .spaced-repetition-container {
+      margin-top: 1em;
   }

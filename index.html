@@ -15,13 +15,13 @@
         <div class = "personal-logo">
                 <a href="#main" alt = "logo"><img src="website-images/logo.jpg" alt="logo"></a> 
         </div>    
-        <i class="fas fa-bars fa-2x open" onclick="openNav()"></i>       
+        <i class="fas fa-bars open" onclick="openNav()"></i>       
         <nav id="nav" class="nav" role="navigation">
-            <i class="fas fa-bars fa-2x closebtn" onclick="closeNav()"></i>
-                <a href="#main" class = "home">Home</a>
-                <a href="#about" class = "about">About</a>
-                <a href="#projects" class = "projects">Projects</a>
-                <a href="#contact" class = "contact">Contact</a>
+            <i class="fas fa-bars closebtn" onclick="closeNav()"></i>
+                <a href="#main" class = "home" onclick="closeNav()">Home</a>
+                <a href="#about" class = "about" onclick="closeNav()">About</a>
+                <a href="#projects" class = "projects" onclick="closeNav()">Projects</a>
+                <a href="#contact" class = "contact" onclick="closeNav()">Contact</a>
         </nav>
     <main role = "main">
         <header role = "banner" class = "heading">
@@ -100,7 +100,7 @@
 <div class="about-me-page" id = "about">
     <main role = "main">
         <header role = "banner" class = "heading">
-            <h2 class = "border-bottom">Who am I?</h2>
+            <h1 class = "border-bottom">Who am I?</h1>
         </header>
         <section class = "about-me">
             <img src="website-images/EG1-9.jpg" alt="personal profile" class = "header-photo">
@@ -126,7 +126,7 @@
     <main role = "main">
             <section>
                 <h1 class = "center border-bottom">Projects</h1>
-                <h2 class="center colored">Rate Music</h2>
+                <h2 class="center colored project-title">Rate Music</h2>
                 <div class="project-container">
                     <a href="https://elan-ratemusic.netlify.com/" target="_blank">
                         <img class = "ratemusic" src="website-images/albumlist.png" alt="rate music app">
@@ -144,7 +144,7 @@
                     It was built using React on the front-end and Node.js and PostgreSQL on the backend. 
                 </p>
                 <h2 class="center">Technologies Used: </h2>
-                <div class="technologies">
+                <div class="technologies border-bottom">
                     <svg class="css" width="48px" viewBox="0 0 256 361" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                         <g>
                             <path d="M127.843868,360.087912 L23.6617143,331.166242 L0.445186813,70.7657143 L255.554813,70.7657143 L232.31367,331.125451 L127.843868,360.087912 L127.843868,360.087912 Z" fill="#264DE4"></path>
@@ -199,8 +199,8 @@
                         </g>
                     </svg>
                 </div>
-                <section class="spaced-repetition">
-                    <h2 class="center colored">Spaced Repetition</h2>
+                <section class="spaced-repetition-container">
+                    <h2 class="center colored project-title">Spaced Repetition</h2>
                 <div class="project-container">
                     <a href="https://eg-hc-spaced-repetition.netlify.com" target="_blank">
                         <img class = "spaced-repetition" src="website-images/SR-dashboard.png" alt="Spaced Repetition Project">
