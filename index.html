@@ -12,23 +12,17 @@
 </head>
 <body>
     <div class="main-page" id = "main">
-            <div class = "personal-logo">
-                    <a href="#main" alt = "logo"><img src="website-images/logo.jpg" alt="logo"></a> 
-            </div>    
-            <i class="fas fa-bars fa-2x open" onclick="openNav()"></i>       
-            <nav id="nav" class="nav" role="navigation">
-                <i class="fas fa-bars fa-2x closebtn" onclick="closeNav()"></i>
-                    <a href="#main" class = "home">Home</a>
-                    <a href="#about" class = "about">About</a>
-                    <a href="#projects" class = "projects">Projects</a>
-                    <a href="#contact" class = "contact">Contact</a>
-            </nav>
-            <div class="dropdown hidden">
-                    <a href="#main" class = "home">HOME</a>
-                    <a href="#about" class = "about">ABOUT</a>
-                    <a href="#projects" class = "projects">PROJECTS</a>
-                    <a href="#contact" class = "contact">CONTACT</a>
-            </div>
+        <div class = "personal-logo">
+                <a href="#main" alt = "logo"><img src="website-images/logo.jpg" alt="logo"></a> 
+        </div>    
+        <i class="fas fa-bars fa-2x open" onclick="openNav()"></i>       
+        <nav id="nav" class="nav" role="navigation">
+            <i class="fas fa-bars fa-2x closebtn" onclick="closeNav()"></i>
+                <a href="#main" class = "home">Home</a>
+                <a href="#about" class = "about">About</a>
+                <a href="#projects" class = "projects">Projects</a>
+                <a href="#contact" class = "contact">Contact</a>
+        </nav>
     <main role = "main">
         <header role = "banner" class = "heading">
         </header>
@@ -110,7 +104,8 @@
         </header>
         <section class = "about-me">
             <img src="website-images/EG1-9.jpg" alt="personal profile" class = "header-photo">
-            <button type = "button" class="content js-about">
+            <button type = "button" class="content js-about"
+            id="about-me-content" >
                     About Me
             </button>
             <div class="container hidden">

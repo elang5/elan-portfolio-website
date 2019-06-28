@@ -171,32 +171,6 @@ p {
     padding-bottom: .5em;
 }
 
-.dropdown.hidden {
-    display: none;
-}
-
-.dropdown {
-    margin-top: .5em;
-    display: flex;
-    flex-flow: column;
-    grid-column-start: 3;
-}
-
-.dropdown a {
-    text-align: right;
-    padding: 8px 14px;
-}
-
-.dropdown a:hover {
-    background-color: #915006;
-    color: white;
-}
-
-.mobile-menu {
-    display: flex;
-    align-content: center;
-}
-
 .center {
     text-align: center;
 }
