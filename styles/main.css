@@ -16,7 +16,11 @@ body {
     border-right: 7px solid #0A3A5E;
     border-bottom: 7px solid #0A3A5E;
     color: white;
-    background-image: url(../website-images/drops.jpg);
+    background: linear-gradient(
+    135deg,
+    rgba(36, 46, 77, .9),
+    rgba(137, 126, 121, .9)
+  );
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,7 +30,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .about-me-page, .projects-page, .contact-page {
@@ -152,7 +156,7 @@ a {
 .hero-text {
     text-align: center;
     width: 75%;
-    color: black;
+    color: white;
     font-family: 'Spectral', serif;
     margin: 0 auto;
 }
@@ -372,7 +376,7 @@ h1 {
 }
 
 .colored {
-    color: rgba(160, 57, 1, 0.927);
+    color: rgba(255, 122, 50, 0.927);
     font-size: 1.75rem;
 }
 
@@ -406,7 +410,7 @@ nav {
     top: .125em;
     right: 0;
     margin-left: 50px;
-    color: rgba(160, 57, 1, 0.927);
+    color: rgba(222, 78, 0, 0.927);
     cursor: pointer;
   }
   
@@ -417,7 +421,7 @@ nav {
   
   .fa-bars {
     margin: .25em;
-    color: rgba(160, 57, 1, 0.927);
+    color: rgba(222, 78, 0, 0.927);
     cursor: pointer;
     font-size: 40px;
   }
@@ -430,4 +434,8 @@ nav {
 
   .spaced-repetition-container {
       margin-top: 1em;
+  }
+
+  h1.center.small {
+      color: white;
   }
