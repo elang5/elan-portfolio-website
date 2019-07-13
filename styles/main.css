@@ -36,15 +36,18 @@ a {
 .about-me-page, .projects-page, .contact-page {
     padding-left: 2em;
     padding-right: 2em;
-    padding-top: 3em;
+    /* padding-top: 3em; */
 }
 
+.projects-page > main {
+    padding-top: 0;
+}
 
 main {
     margin-left: 3em;
     margin-right: 3em;
     margin-bottom: 2em;
-    padding-top: 1.5em;
+    padding-top: 6.5em;
 }
 
 footer {
@@ -125,8 +128,8 @@ a {
 
 .container-2 {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
     height: 90vh;
 }
 
@@ -167,12 +170,17 @@ p {
 }
 
 .heading {
-    text-align: center;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
 }
 
 .header-photo {
-    max-width: 75%;
-    padding-bottom: .5em;
+    border: 1px solid black;
+    max-width: 60%;
+    margin-bottom: 2em;
+
 }
 
 .center {
@@ -226,7 +234,7 @@ p {
 
 button {
     padding: .5em;
-    border: none;
+    border: 1px solid black;
     margin: 1em;
     box-shadow: 4px 4px #0A3A5E;
 }
@@ -287,6 +295,7 @@ button {
     align-items: center;
     margin: 0 auto;
     color: white;
+    margin-top: 8rem;
 }
 
 .contact-page {
@@ -322,8 +331,8 @@ button {
 	text-shadow: 0;
     width: 13px;
     height: 13px;
-    border-bottom: 4px solid #915006;
-    border-right: 4px solid #915006;
+    border-bottom: 4px solid rgb(222, 78, 0);
+    border-right: 4px solid rgb(222, 78, 0);
     z-index: 9;
     left: 50%;
     cursor: pointer;
@@ -428,8 +437,8 @@ nav {
 
   .personal-logo {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 5px;
+    right: 20px;
   }
 
   .spaced-repetition-container {
@@ -438,4 +447,12 @@ nav {
 
   h1.center.small {
       color: white;
+  }
+
+  #about > h1.center.border-bottom {
+      margin-top: 1em;
+  }
+
+  #about, section.projects {
+      padding-top: 2em;
   }
