@@ -134,7 +134,7 @@ a {
 }
 
 .ratemusic, .spaced-repetition {
-    max-width: 90%;
+    width: 100%;
 }
 
 .menu-bar1.change {
@@ -178,7 +178,7 @@ p {
 
 .header-photo {
     border: 1px solid black;
-    max-width: 60%;
+    max-width: 55%;
     margin-bottom: 2em;
 
 }
@@ -251,6 +251,10 @@ button {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.project-container > a {
+    max-width: 75%;
 }
 
 .caption {
@@ -455,4 +459,8 @@ nav {
 
   #about, section.projects {
       padding-top: 2em;
+  }
+
+  .programming-about {
+    margin-top: 8em;
   }
