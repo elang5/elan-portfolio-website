@@ -36,7 +36,7 @@ a {
 .about-me-page, .projects-page, .contact-page {
     padding-left: 2em;
     padding-right: 2em;
-    /* padding-top: 3em; */
+    padding-top: 6em;
 }
 
 .projects-page > main {
@@ -299,7 +299,6 @@ button {
     align-items: center;
     margin: 0 auto;
     color: white;
-    margin-top: 8rem;
 }
 
 .contact-page {
@@ -453,14 +452,18 @@ nav {
       color: white;
   }
 
-  #about > h1.center.border-bottom {
+  #technologies > h1.center.border-bottom {
       margin-top: 1em;
   }
 
-  #about, section.projects {
+  #technologies, section.projects {
       padding-top: 2em;
   }
 
-  .programming-about {
-    margin-top: 8em;
+  .about-me > button.content.js-about {
+      margin-top: 14em;
+  }
+
+  .container.hidden > h1.programming-about {
+      margin-top: 8em;
   }

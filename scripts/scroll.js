@@ -12,7 +12,7 @@ const scroll = function() {
     });
   }
 
-  scrollAnimation('.scroll-down', '#about');
+  scrollAnimation('.scroll-down', '#technologies');
   scrollAnimation('.logo', '#main');
   scrollAnimation('.home', '#main');
   scrollAnimation('.about', '#about');
