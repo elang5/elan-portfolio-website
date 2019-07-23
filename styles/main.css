@@ -12,9 +12,7 @@ body {
     padding: 0;
     width: 100%;
     line-height: 1.6;
-    border-left: 7px solid #0A3A5E;
-    border-right: 7px solid #0A3A5E;
-    border-bottom: 7px solid #0A3A5E;
+    border: 7px solid #0A3A5E;
     color: white;
     background: linear-gradient(
     135deg,
@@ -36,11 +34,7 @@ a {
 .about-me-page, .projects-page, .contact-page {
     padding-left: 2em;
     padding-right: 2em;
-    padding-top: 6em;
-}
-
-.projects-page > main {
-    padding-top: 0;
+    padding-top: 3em;
 }
 
 main {
@@ -85,6 +79,14 @@ textarea {
 a {
     text-decoration: none;
     color: black;
+}
+
+button {
+    transition: .3s;
+}
+
+.js-about:hover {
+    background-color: rgba(255, 122, 50, 0.927);
 }
 
 @media only screen and (min-width: 550px) {
@@ -134,7 +136,8 @@ a {
 }
 
 .ratemusic, .spaced-repetition {
-    width: 100%;
+    max-width: 600px;
+    width: 75vw;
 }
 
 .menu-bar1.change {
@@ -149,11 +152,6 @@ a {
 .menu-bar3.change {
     -webkit-transform: rotate(45deg) translate(-9px, -9px);
     transform: rotate(45deg) translate(-9px, -9px)
-}
-
-.main-page {
-    height: 950px;
-    border-top: 7px solid #0A3A5E;
 }
 
 .hero-text {
@@ -173,14 +171,14 @@ p {
     display: flex;
     width: 100%;
     position: fixed;
+    top: 10px;
     justify-content: space-between;
 }
 
 .header-photo {
     border: 1px solid black;
-    max-width: 55%;
     margin-bottom: 2em;
-
+    max-width: 80vw;
 }
 
 .center {
@@ -192,7 +190,7 @@ p {
     align-items: center;
     padding: 3em 0;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 3rem;
     width: 100%;
 }
@@ -201,10 +199,12 @@ p {
     margin: 0 auto;
 }
 
+.python, .redux {
+    width: 48px;
+    height: auto;
+}
+
 @media only screen and (max-width: 465px) {
-    .icons {
-        grid-gap: .5rem;
-    }
     .hero-text, .center.small {
         font-size: 22px;
     }
@@ -213,16 +213,31 @@ p {
     }
 }
 
+.view-github:hover {
+    background-color: rgba(255, 122, 50, 0.927);
+}
+
 .technologies {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 2em .5em;
+    padding: 0 .5em;
     margin: 0 auto;
 }
 
 .technologies > svg {
     padding: .5em 0;
+}
+
+.project-card {
+    max-width: 80%;
+    margin: auto;
+}
+
+.about-paragraph {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 1em;
 }
 
 @media only screen and (max-width: 400px) {
@@ -253,10 +268,6 @@ button {
     text-align: center;
 }
 
-.project-container > a {
-    max-width: 75%;
-}
-
 .caption {
     margin: .5em;
     color: white;
@@ -265,6 +276,7 @@ button {
 .border-bottom {
     padding-bottom: .5em;
     border-bottom: 2px solid #0A3A5E;
+    margin-bottom: 1em;
 }
 
 .border-top {
@@ -272,7 +284,7 @@ button {
     padding-top: 1em;
 }
 
-.button-container {
+.btn-container {
     margin: 1em;
     text-align: center;
 }
@@ -390,6 +402,8 @@ h1 {
 .colored {
     color: rgba(255, 122, 50, 0.927);
     font-size: 1.75rem;
+    margin-bottom: 2em;
+    text-align: center;
 }
 
 nav {
@@ -419,20 +433,16 @@ nav {
   
   nav .closebtn {
     position: absolute;
-    top: .125em;
-    right: 0;
-    margin-left: 50px;
+    top: 13px;
+    right: 7px;
     color: rgba(222, 78, 0, 0.927);
     cursor: pointer;
+    font-size: 2.5em;
   }
-  
-  @media screen and (max-height: 450px) {
-    nav {padding-top: 15px;}
-    nav a {font-size: 18px;}
-  }
-  
+
   .fa-bars {
-    margin: .25em;
+    margin-left: .25em;
+    margin-top: .1em;
     color: rgba(222, 78, 0, 0.927);
     cursor: pointer;
     font-size: 40px;
@@ -444,12 +454,20 @@ nav {
     right: 20px;
   }
 
-  .spaced-repetition-container {
-      margin-top: 1em;
+  .projects-page > section {
+      padding-bottom: 4em;
+  }
+
+  .rate-music, .spaced-repetition-container, .laconic-container {
+      margin-top: 4em;
   }
 
   h1.center.small {
       color: white;
+  }
+
+  #technologies {
+      margin-bottom: 2em;
   }
 
   #technologies > h1.center.border-bottom {
@@ -460,20 +478,87 @@ nav {
       padding-top: 2em;
   }
 
-  .about-me > button.content.js-about {
-      margin-top: 14em;
+  .icon {
+      display: flex;
+      flex-flow: column wrap;
+      margin: 0 auto;
   }
 
-  .container.hidden > h1.programming-about {
-      margin-top: 8em;
+  .icon > label {
+      text-align: center;
+      padding-top: .3em;
+      color: white;
   }
 
-  @media screen and (min-width: 1200px) {
-      main {
-          padding-top: 3em;
+  .icon > svg {
+      margin: 0 auto;
+  }
+
+  @media screen and (max-height: 450px) {
+    nav {padding-top: 15px;}
+    nav a {font-size: 18px;}
+  } 
+
+  @media screen and (max-width: 660px) {
+      #technologies > div.icons {
+          grid-template-columns: 1fr 1fr;
       }
 
       .header-photo {
-          max-width: 45%;
+          margin-top: 5em;
+      }
+
+      .project-card, .about-paragraph {
+          max-width: 95%;
+      }
+  }
+
+  @media screen and (min-width: 1200px) {
+    main {
+        padding-top: 3em;
+    }
+
+    .header-photo {
+        max-width: 45%;
+    }
+
+    .scroll-down {
+        margin-bottom: 1.5em;
+    }
+
+    .project-card {
+        display: flex;
+    }
+
+    .colored {
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .project-container {
+        margin-right: 2em;
+    }
+
+    .project-description > h2 {
+        margin-top: 0;
+    }
+
+    .btn-container {
+        text-align: left;
+        margin: 3em 0;
+    }
+
+    .btn-container > button {
+        margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+      .icons {
+          width: 80%;
+      }
+
+      .header-photo {
+          max-width: 45vw;
       }
   }
