@@ -467,3 +467,13 @@ nav {
   .container.hidden > h1.programming-about {
       margin-top: 8em;
   }
+
+  @media screen and (min-width: 1200px) {
+      main {
+          padding-top: 3em;
+      }
+
+      .header-photo {
+          max-width: 45%;
+      }
+  }
