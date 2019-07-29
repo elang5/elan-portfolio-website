@@ -14,11 +14,9 @@ body {
     line-height: 1.6;
     border: 7px solid #0A3A5E;
     color: white;
-    background: linear-gradient(
-    135deg,
-    rgba(36, 46, 77, .9),
-    rgba(137, 126, 121, .9)
-  );
+    background: #5f2c82; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5f2c82, #49a09d); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5f2c82, #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,8 +54,8 @@ p {
     font-size: 16px;
 }
 
-h1, h2, h3, label {
-    color: black;
+h1 {
+    color: #6ae8ff;
 }
 
 h1, h2, h3, label, select, option, textarea, button, .dropdown > a {
@@ -218,10 +216,10 @@ p {
 }
 
 .technologies {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    align-items: center;
 }
 
 .technologies > svg {
@@ -333,47 +331,6 @@ button {
     justify-content: center;
 }
 
-.scroll-down {
-    position: absolute;
-	left: 50%;
-	bottom: 10px;
-	display: block;
-	text-align: center;
-	font-size: 24px;
-	z-index: 100;
-	text-decoration: none;
-	text-shadow: 0;
-    width: 13px;
-    height: 13px;
-    border-bottom: 4px solid rgb(222, 78, 0);
-    border-right: 4px solid rgb(222, 78, 0);
-    z-index: 9;
-    left: 50%;
-    cursor: pointer;
-    -webkit-transform: translate(-50%, 0%) rotate(45deg);
-    -moz-transform: translate(-50%, 0%) rotate(45deg);
-    transform: translate(-50%, 0%) rotate(45deg);
-        -webkit-animation: fade_move_down 4s ease-in-out infinite;
-        -moz-animation:    fade_move_down 4s ease-in-out infinite;
-        animation:         fade_move_down 4s ease-in-out infinite;
-}
-
-@-webkit-keyframes fade_move_down {
-  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
-}
-@-moz-keyframes fade_move_down {
-  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
-}
-@keyframes fade_move_down {
-  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
-}
-
 @media only screen and (max-width: 550px) {
     .container.hidden {
         display: none;
@@ -398,8 +355,11 @@ h1 {
     font-size: 2rem;
 }
 
+h2 {
+    color: rgb(255, 179, 138);
+}
+
 .colored {
-    color: rgba(255, 122, 50, 0.927);
     font-size: 1.75rem;
     margin-bottom: 2em;
     text-align: center;
@@ -434,7 +394,7 @@ nav {
     position: absolute;
     top: 13px;
     right: 7px;
-    color: rgba(222, 78, 0, 0.927);
+    color: rgb(255, 179, 138);
     cursor: pointer;
     font-size: 2.5em;
   }
@@ -442,7 +402,7 @@ nav {
   .fa-bars {
     margin-left: .25em;
     margin-top: .1em;
-    color: rgba(222, 78, 0, 0.927);
+    color: rgb(255, 179, 138);
     cursor: pointer;
     font-size: 40px;
   }
@@ -510,9 +470,13 @@ nav {
       .project-card, .about-paragraph {
           max-width: 95%;
       }
+
+      .small {
+          width: 100%;
+          margin-bottom: 1em;      }
   }
 
-  @media screen and (min-width:660px) and (max-width: 1200px) {
+  @media screen and (min-width:660px) and (max-width: 1300px) {
     .technologies {
         display: grid;
         grid-gap: 1em;
@@ -522,17 +486,13 @@ nav {
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1300px) {
     main {
         padding-top: 3em;
     }
 
     .header-photo {
         max-width: 45%;
-    }
-
-    .scroll-down {
-        margin-bottom: .75em;
     }
 
     .project-card {
@@ -573,7 +533,7 @@ nav {
         grid-template-columns: repeat(6, 1fr);
         justify-content: center;
         align-items: center;
-        margin-left: -1em;
+        margin-left: -.5em;
         width: 35vw;
     }
   }
@@ -591,9 +551,5 @@ nav {
   @media screen and (max-height: 700px) {
       .container-2 {
           height: 600px;
-      }
-
-      .scroll-down {
-          visibility: hidden;
       }
   }
