@@ -221,7 +221,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 0 .5em;
     margin: 0 auto;
 }
 
@@ -314,7 +313,7 @@ button {
 }
 
 .contact-page {
-    height: 900px;
+    height: 600px;
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
@@ -513,6 +512,16 @@ nav {
       }
   }
 
+  @media screen and (min-width:660px) and (max-width: 1200px) {
+    .technologies {
+        display: grid;
+        grid-gap: 1em;
+        align-items: center;
+        align-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     main {
         padding-top: 3em;
@@ -523,7 +532,7 @@ nav {
     }
 
     .scroll-down {
-        margin-bottom: 1.5em;
+        margin-bottom: .75em;
     }
 
     .project-card {
@@ -551,6 +560,22 @@ nav {
     .btn-container > button {
         margin: 0;
     }
+
+    .icon > svg {
+        max-width: 70px;
+        margin: 0 auto;
+        height: 70px;
+    }
+
+    .technologies {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-left: -1em;
+        width: 35vw;
+    }
   }
 
   @media screen and (min-width: 1000px) {
@@ -560,5 +585,15 @@ nav {
 
       .header-photo {
           max-width: 45vw;
+      }
+  }
+
+  @media screen and (max-height: 700px) {
+      .container-2 {
+          height: 600px;
+      }
+
+      .scroll-down {
+          visibility: hidden;
       }
   }
