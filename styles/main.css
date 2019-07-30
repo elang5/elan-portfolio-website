@@ -84,7 +84,7 @@ button {
 }
 
 .js-about:hover {
-    background-color: rgba(255, 122, 50, 0.927);
+    background-color: rgb(255, 179, 138)
 }
 
 @media only screen and (min-width: 550px) {
@@ -103,10 +103,11 @@ button {
         color: #0A3A5E;
         font-weight: bold;
         padding-left: 10px;
+        transition: .4s;
     }
 
     .navbar > li > a:hover {
-        color: #915006;
+        color: rgb(255, 179, 138);
     }
 
     .js-about {
@@ -212,7 +213,7 @@ p {
 }
 
 .view-github:hover {
-    background-color: rgba(255, 122, 50, 0.927);
+    background-color: rgb(255, 179, 138);
 }
 
 .technologies {
@@ -387,7 +388,7 @@ nav {
   }
   
   nav a:hover {
-    color: rgba(218, 98, 33, 0.927);
+    color: rgb(255, 179, 138);
   }
   
   nav .closebtn {
