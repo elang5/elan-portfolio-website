@@ -23,7 +23,18 @@ body {
   line-height: 1.6;
   border: 7px solid #0a3a5e;
   color: black;
+  /* background: rgb(255, 205, 179); */
   background: rgb(255, 205, 179); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(253, 201, 173),
+    rgb(253, 155, 103)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgb(255, 205, 179),
+    rgb(253, 155, 103)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
