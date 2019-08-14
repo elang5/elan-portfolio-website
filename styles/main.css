@@ -218,13 +218,23 @@ p {
   height: auto;
 }
 
-@media only screen and (max-width: 465px) {
+@media screen and (max-width: 465px) {
   .hero-text,
   .center.small {
     font-size: 22px;
   }
+
   .icons > svg {
     max-width: 40px;
+  }
+
+  .btn-container > .view-github {
+    width: 130px;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -578,4 +588,11 @@ section.projects {
   .container-2 {
     height: 600px;
   }
+}
+
+@media screen and (max-width: 410px) {
+  /* .about-me-page {
+    padding-left: 0;
+    margin-left: 2em;
+  } */
 }
