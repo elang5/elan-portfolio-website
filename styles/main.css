@@ -589,10 +589,3 @@ section.projects {
     height: 600px;
   }
 }
-
-@media screen and (max-width: 410px) {
-  /* .about-me-page {
-    padding-left: 0;
-    margin-left: 2em;
-  } */
-}
